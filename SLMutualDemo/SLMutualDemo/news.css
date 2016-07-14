@@ -1,0 +1,26 @@
+img {
+    width: 100%
+}
+
+#title {
+    text-align: center;
+    font-size : 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#subTitle {
+    font-size: 13px;
+    color    : grad;
+    margin   : 5px 5px 5px 5px;
+}
+
+span {
+    margin-right: 8px;
+}
+
+#all-img {
+    text-align: center;
+    color     : grad;
+    margin    : 8px 0px;
+}
