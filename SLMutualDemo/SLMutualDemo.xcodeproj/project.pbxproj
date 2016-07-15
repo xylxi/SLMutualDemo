@@ -16,6 +16,8 @@
 		6FAFCB1C1D377954003831B1 /* SLMutualDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFCB1B1D377954003831B1 /* SLMutualDemoUITests.swift */; };
 		6FAFCB2C1D378114003831B1 /* news.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FAFCB2B1D378114003831B1 /* news.css */; };
 		6FAFCB2E1D378A2A003831B1 /* news.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FAFCB2D1D378A2A003831B1 /* news.js */; };
+		6FBDAA351D38874B005938C5 /* SLMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDAA341D38874B005938C5 /* SLMainTableViewController.swift */; };
+		6FBDAA391D388A8A005938C5 /* SLXHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDAA381D388A8A005938C5 /* SLXHViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6FAFCB1D1D377954003831B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAFCB2B1D378114003831B1 /* news.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = news.css; sourceTree = "<group>"; };
 		6FAFCB2D1D378A2A003831B1 /* news.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = news.js; sourceTree = "<group>"; };
+		6FBDAA341D38874B005938C5 /* SLMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLMainTableViewController.swift; sourceTree = "<group>"; };
+		6FBDAA381D388A8A005938C5 /* SLXHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLXHViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				6FAFCAFB1D377954003831B1 /* AppDelegate.swift */,
-				6FAFCAFD1D377954003831B1 /* ViewController.swift */,
-				6FAFCB2D1D378A2A003831B1 /* news.js */,
-				6FAFCB2B1D378114003831B1 /* news.css */,
+				6FBDAA371D3889C3005938C5 /* 鲜花 */,
+				6FBDAA361D3889A2005938C5 /* 网易新闻 */,
+				6FBDAA341D38874B005938C5 /* SLMainTableViewController.swift */,
 				6FAFCAFF1D377954003831B1 /* Main.storyboard */,
 				6FAFCB021D377954003831B1 /* Assets.xcassets */,
 				6FAFCB041D377954003831B1 /* LaunchScreen.storyboard */,
@@ -129,6 +133,24 @@
 				6FAFCB1D1D377954003831B1 /* Info.plist */,
 			);
 			path = SLMutualDemoUITests;
+			sourceTree = "<group>";
+		};
+		6FBDAA361D3889A2005938C5 /* 网易新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				6FAFCAFD1D377954003831B1 /* ViewController.swift */,
+				6FAFCB2D1D378A2A003831B1 /* news.js */,
+				6FAFCB2B1D378114003831B1 /* news.css */,
+			);
+			name = "网易新闻";
+			sourceTree = "<group>";
+		};
+		6FBDAA371D3889C3005938C5 /* 鲜花 */ = {
+			isa = PBXGroup;
+			children = (
+				6FBDAA381D388A8A005938C5 /* SLXHViewController.swift */,
+			);
+			name = "鲜花";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FAFCAFE1D377954003831B1 /* ViewController.swift in Sources */,
+				6FBDAA391D388A8A005938C5 /* SLXHViewController.swift in Sources */,
+				6FBDAA351D38874B005938C5 /* SLMainTableViewController.swift in Sources */,
 				6FAFCAFC1D377954003831B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +516,7 @@
 				6FAFCB221D377954003831B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FAFCB231D377954003831B1 /* Build configuration list for PBXNativeTarget "SLMutualDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +525,7 @@
 				6FAFCB251D377954003831B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FAFCB261D377954003831B1 /* Build configuration list for PBXNativeTarget "SLMutualDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +534,7 @@
 				6FAFCB281D377954003831B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    
+    @IBOutlet weak var indiView: UIActivityIndicatorView!
     let url   = NSURL(string: "http://c.3g.163.com/nc/article/BMU8KHQD00964J4O/full.html")!
     let token = "BMU8KHQD00964J4O";
     var task: NSURLSessionDataTask!
@@ -17,7 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.delegate = self;
-     
+        
+        self.indiView.startAnimating()
+        self.indiView.hidesWhenStopped = true
         
         self.task = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration()).dataTaskWithURL(self.url) { (data, response, error) in
                 if let data = data {
@@ -59,6 +64,8 @@ class ViewController: UIViewController {
         let html  = "<html><head>\(cssHtml)</head><body>\(titleHtml)\(subTitleHtml)\(content)\(jsHtml )</body></html>"
         
         self.webView.loadHTMLString(html, baseURL: nil)
+        
+        self.indiView.stopAnimating()
     }
     
     func method(url: String) {
